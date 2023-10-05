@@ -1,0 +1,37 @@
+<!--HTML filen är validerad och godkänt enligt rådande standader för HTML -->
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="style.css"> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <title>Musik Galleri</title>
+</head>
+<body>
+<main id ="minMain">
+    <header id ="minHeader">
+	      <h1>Musik Galleri</h1>
+        <p>Sök på din favorit artist eller band och få fram deras top tracks </p>
+    </header>
+
+    <!--Form element inspirerat från kodexempel från föreläsning https://github.com/karlstad-business-school/ISGB13-Portabla-format-VT22/blob/main/F2/kodexempel/index.html-->
+    <form id="searchform">
+      <div class="input-group">
+        <input type="search" id="search" autocomplete="off" placeholder="skriv in artist eller band" class="form-control">
+        <div class="input-group-append">
+          <button style=background-color:black type="submit" class="btn btn-primary">Sök</button>
+        </div>
+      </div>
+    </form>
+
+    <div id = "innehall" class= "my-5"> <!--detta är elementet som hämtas till javascript filen, där alla element som skapas läggs in-->
+    </div>
+
+</main>
+<script src = "script.js"></script>
+</body>
+</html>
+

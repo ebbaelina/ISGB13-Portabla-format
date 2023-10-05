@@ -1,0 +1,102 @@
+/*CSS filen är validerad och godkänt enligt rådande standader för CSS */
+
+/* Länka in webfonten "Oswlad" från google fonts här*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+*{
+  font-family: 'Oswald', sans-serif; /*sätter Oswald font på hela sidan*/
+}
+
+body {
+  background-color: lightblue !important; /*!imortant hämtat från https://stackoverflow.com/questions/10768891/how-to-change-the-default-background-color-white-to-something-else-in-twitter-bo*/
+}
+
+/* header elementet stylas */
+#minHeader {
+  padding: 30px;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 20px;
+}
+
+/*sök foruläret stylas*/
+#searchform{
+   max-width: 100%; /*sökrutan får ej vara större än 100% av bodyns storlek*/
+   width: 60%;
+   margin-left: auto;  /*margin-left och right sätts till auto för att sökrutan ska bli centrerad på sidan */  
+   margin-right: auto;
+   padding: 20px; /*padding lägs på för att avskilja header från sökfältet*/
+}
+
+/*kort 1 stylas*/
+#card1 { 
+  border: solid 2px; /*kant runt kortet läggs till */ 
+   margin-left: auto;   /*margin-left och right sätts till auto för att kortet ska bli centrerad på sidan */ 
+   margin-right: auto;
+   padding: 20px;  /* padding läggs på för att ge mellanrum mellan de två korten */
+}
+
+#cardheader {
+  text-transform: uppercase; /*gör alla bokstäver i texten till versaler*/
+  text-align: center; /*texten ska vara centrerad*/
+  font-size: 2rem;
+}
+#image {
+  max-width: 100%; /*bilden får inte vara större än 100% av kortets storlek*/ 
+  margin-left: auto; /*margin-left och right sätts till auto för att bilden ska bli centrerad i kortet */ 
+  margin-right: auto;
+  
+}
+
+/*kort 2 stylas*/
+#card2 {
+  border: solid 2px; /*kant runt kortet läggs till */ 
+  margin-left: auto; /*margin-left och right sätts till auto för att kortet ska bli centrerad på sidan */ 
+  margin-right: auto;
+  margin-top: 20px; /*margin för att hålla isär de två korten på sidan*/
+  padding: 5px; /*padding för att flytta in allt innehåll i kortet 5px*/
+  display: flex; /*gör kortet till en flexbox*/ 
+  flex-direction: row; /*flexboxen ska vara uppbyggt så att elementen ligger brevid varandra, från vänster till höger*/
+  width: 100%;  
+  height: 400px;
+}
+
+#cardtext { 
+  text-transform: uppercase; /*gör om th rubriken till versaler*/
+  text-align: center; /*texten ska vara centerad i elementet*/ 
+  margin: 10px; 
+  width: 100%;
+}
+
+#lista {
+  width: 50%; /*listan ska ta upp 50% av kortet som är 100%. För att skapa två lika stora element i flexboxen */
+}
+
+#li {
+  max-width: 100%; /*li elementen får inte ta upp mer än 100% av listans storlek*/
+  padding: 15px; /*padding för att få avstånd mellan alla li element */
+}
+
+
+
+#albumcover {
+  width: 50%; /*bilden ska ta upp 50% av kortet som är 100%. För att skapa två lika stora element i flexboxen */
+}
+
+/*th texten stylas och även padding så att den håller ett bra avstånd från kortets kant samt första li elementet*/
+th {
+  font-size: 2rem; 
+  padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
